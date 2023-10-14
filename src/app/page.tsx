@@ -1,3 +1,8 @@
+import styles from "./page.module.scss"
+
 export default function Index() {
-  return <></>
+  return (
+    <main style={styles} className={styles.container}>
+    </main>
+  );
 }
