@@ -1,0 +1,29 @@
+@import '/src/styles/variables.scss';
+
+.text {
+    color: $text;
+    font-size: 95px;
+    max-width: 864px;
+    text-align: center;
+    line-height: 106.523%;
+}
+
+#song {
+    color: $primary;
+    text-shadow: 0px 0px 10px rgba($primary, .5);;
+}
+
+@media (max-width: 850px) {
+    .text {
+        font-size: 11vw;
+        max-width: 95vw;
+    }
+}
+
+@media (max-width: 400px) {
+    .text {
+        font-size: 40px;
+        max-width: 17rem;
+        line-height: 45px;
+    }
+}
