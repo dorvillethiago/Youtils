@@ -1,8 +1,12 @@
 import styles from "./Input.module.scss"
 
-export default function Input() {
+interface InputProps {
+    className?: string;
+}
+
+export default function Input({className}: InputProps) {
     return (
-        <fieldset className={styles.fieldset}>
+        <fieldset className={className}>
             <input className={styles.input} placeholder="https://www.youtube.com/watch?v=oqUzrEVkR14"/>
         </fieldset>
     )
