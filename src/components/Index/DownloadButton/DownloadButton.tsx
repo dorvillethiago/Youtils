@@ -3,12 +3,15 @@ import styles from "./DownloadButton.module.scss"
 
 interface DownloadButtonProps {
     onClick: () => void;
+    className?: string;
 }
 
-export default function DownloadButton({onClick}: DownloadButtonProps) {
+export default function DownloadButton({onClick, className}: DownloadButtonProps) {
     return (
-        <button className={styles.button} onClick={onClick}>
-            <Image width={37} height={37} src="/download-icon.svg" alt="Download icone"/>
-        </button>
+        <div className={className}>
+            <button className={styles.button} onClick={onClick} type="submit">
+                <Image width={37} height={37} src="/download-icon.svg" alt="Download icone"/>
+            </button>
+        </div>
     )
 }
