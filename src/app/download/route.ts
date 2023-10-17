@@ -9,6 +9,11 @@ export async function POST(request: Request) {
   const requestData = await request.json();
   if (!requestData.url) return new Response('URL is required', { status: 400 });
   if (!isYouTubeUrl(requestData.url)) return new Response('URL is not a YouTube URL', { status: 400 });
+  try {
+    await ytdl.getInfo(requestData.url, options);
+  } catch (err) { 
+    return new Response("Internal api error", { status: 500 });
+  }
   const info = await ytdl.getInfo(requestData.url, options);
   if (parseInt(info.videoDetails.lengthSeconds) > 600) return new Response('Video is too long', { status: 400 });
   try {
@@ -23,7 +28,7 @@ export async function POST(request: Request) {
     const blob = new Blob([uint8Array], { type: 'audio/mp3' });
     return new Response(blob);
   } catch (err) {
-    return new Response(String(err), { status: 500 });
+    return new Response("Internal api error", { status: 500 });
   }
 }
 
