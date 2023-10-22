@@ -1,0 +1,9 @@
+@import '/src/styles/variables.scss';
+
+.follower {
+    background-color: $primary;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    filter: blur(300px);
+}
