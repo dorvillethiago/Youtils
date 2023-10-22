@@ -1,10 +1,10 @@
 'use client'
 
-import Input from "@/src/components/Index/Input/Input"
-import DownloadButton from "@/src/components/Index/DownloadButton/DownloadButton";
-import Title from "@/src/components/Index/Title/Title";
+import DownloadButton from "@components/Index/DownloadButton";
+import Input from "@components/Index/Input";
+import Title from "@components/Index/Title";
 
-import styles from "./page.module.scss"
+import styles from "@/src/styles/components/Index/page.module.scss"
 
 export default function Index() {
   return (

@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react";
-import styles from "./MouseFollower.module.scss";
+import styles from "@styles/components/Light/MouseFollower.module.scss";
 
 const MouseFollower = () => {
     const [position, setPosition] = useState({ x: 0, y: 0 });

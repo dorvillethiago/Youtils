@@ -1,4 +1,4 @@
-import styles from "./Light.module.scss";
+import styles from "@styles/components/Light/Light.module.scss";
 import MouseFollower from "./MouseFollower";
 
 export default function Light() {

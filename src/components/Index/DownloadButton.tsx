@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./DownloadButton.module.scss"
+import styles from "@styles/components/Index/DownloadButton.module.scss"
 
 interface DownloadButtonProps {
     onClick: () => void;
