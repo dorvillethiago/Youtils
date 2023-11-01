@@ -1,0 +1,14 @@
+@import '../../variables.scss';
+
+
+.container {
+    display: flex;
+    gap: 80px;
+}
+
+.organizeThumbnail {
+    display: flex;
+    flex-direction: column;
+    padding-top: 230px;
+    width: 550px;
+}
