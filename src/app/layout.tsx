@@ -1,10 +1,10 @@
 import '@styles/globals.scss'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
 
 import Header from '@components/Layout/Header'
-import Light from '@components/Light/Light'
-
 import styles from '@styles/components/Layout/layout.module.scss'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -28,7 +28,7 @@ export default function RootLayout({
             {children}
           </main>
         </div>
-        <Light/>
+        <ToastContainer />
       </body>
     </html>
   )
