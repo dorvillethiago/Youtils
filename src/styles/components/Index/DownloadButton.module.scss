@@ -2,7 +2,8 @@
 
 .button {
   background-color: $primary;
-  padding: 17px;
+  height: 71px;
+  padding: 0 14px;
   border: none;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   cursor: pointer;
@@ -13,14 +14,4 @@
 
 .button:hover {
   background-color: lighten($primary, 10%);
-}
-
-@media (max-width: 420px) {
-    .button {
-        padding: 12px;
-    }
-    .button > img {
-        width: 25px;
-        height: 25px;
-    }
 }

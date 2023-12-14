@@ -9,7 +9,7 @@ interface DownloadButtonProps {
 export default function DownloadButton({onClick, className}: DownloadButtonProps) {
     return (
         <div className={className}>
-            <button className={styles.button} onClick={onClick} type="submit">
+            <button className={styles.button} onClick={onClick} type="button">
                 <Image width={37} height={37} src="/download-icon.svg" alt="Download icone"/>
             </button>
         </div>

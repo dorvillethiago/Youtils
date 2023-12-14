@@ -7,7 +7,7 @@ interface InputProps {
 export default function Input({className}: InputProps) {
     return (
         <fieldset className={className}>
-            <input className={styles.input} placeholder="https://www.youtube.com/watch?v=oqUzrEVkR14"/>
+            <input id="video-input" className={styles.input} placeholder="https://www.youtube.com/watch?v=oqUzrEVkR14"/>
         </fieldset>
     )
 }

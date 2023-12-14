@@ -11,12 +11,14 @@ interface requestData {
   id: string;
 }
 
-export async function GET(request: Request, context: { params: requestData }) { 
+export async function GET(request: Request, context: { params: requestData }) {
   const youtubeVideoUrl = getYoutubeUrl(context.params.id);
   const checked = await isVideoValid(youtubeVideoUrl)
+
   if (!checked) {return new Response('Video is unavailable', { status: 400 });}
 
   const videoInfo = await ytdl.getInfo(youtubeVideoUrl, options);
+
   if (isVideoLongerThan10Minutes(videoInfo.videoDetails.lengthSeconds)) return new Response('Video is too long', { status: 400 });
 
   try {

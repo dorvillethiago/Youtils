@@ -1,0 +1,25 @@
+@import '/src/styles/variables.scss';
+
+.button {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background-color: $primary;
+    color: white;
+    padding: 10px 80px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    animation: fadeInDown 0.5s ease;
+    border-radius: 5px;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    }

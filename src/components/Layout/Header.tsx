@@ -4,9 +4,9 @@ import styles from "@styles/components/Layout/Header.module.scss";
 
 export default function Header() {
   return (
-    <header className={styles.container} style={styles}>
+    <header className={styles.container}>
       <Link href="/">
-        <Image width={204} height={74} alt="Brand logo" src="/logo.svg"></Image>
+        <Image priority width={204} height={74} alt="Brand logo" src="/logo.svg"></Image>
       </Link>
       <Link href="/">
         <Image
