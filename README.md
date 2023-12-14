@@ -3,10 +3,12 @@
 This is a Next.js 13 application that allows users to download songs from YouTube by providing a direct link to the video. It utilizes the YouTube API to extract necessary information and provides a simple interface for users to download their favorite songs directly in the browser.
 
 ## Usage
-1. Provide a YouTube Video Link:
+1. Utilize the deployed version:
+Go to https://youtils-dorvillethiago.vercel.app
+3. Provide a YouTube Video Link:
 Paste the direct link to the YouTube video in the input field.
 
-2. Download the Song:
+4. Download the Song:
 Click on the "Download" button to initiate the download process directly in the browser.
 
 ## Features
