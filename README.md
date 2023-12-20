@@ -1,26 +1,26 @@
-# YouTube Song Downloader App
+# Aplicativo para baixar músicas do YouTube
 
-This is a Next.js 13 application that allows users to download songs from YouTube by providing a direct link to the video. It utilizes the YouTube API to extract necessary information and provides a simple interface for users to download their favorite songs directly in the browser.
+Esta é uma aplicação web Next.js 13 que permite aos usuários baixar músicas do YouTube fornecendo um link para o vídeo. Ele utiliza a API do YouTube para extrair as informações necessárias e fornece uma interface simples para os usuários baixarem suas músicas favoritas diretamente no navegador.
 
-## Usage
-1. Utilize the deployed version:
-Go to https://youtils-dorvillethiago.vercel.app
-3. Provide a YouTube Video Link:
-Paste the direct link to the YouTube video in the input field.
+## Uso
+1. Utilize a versão hospedada:
+Acesse https://youtils-dorvillethiago.vercel.app
+3. Forneça um link de vídeo do YouTube:
+Cole o link do vídeo do YouTube no campo de entrada.
 
-4. Download the Song:
-Click on the "Download" button to initiate the download process directly in the browser.
+4. Baixe a música:
+Clique no botão “Download” para iniciar o processo de download diretamente no navegador.
 
-## Features
+## Características
 
-It uses ytdl-core for video data-extracting and content downloading, Next.js server routes serve as a backend for providing the .mp3 files to the users.
+Ele usa ytdl-core para extração de dados de vídeo e download de conteúdo. As rotas do servidor Next.js servem como back-end para fornecer os arquivos .mp3 aos usuários.
 
-## Contributing
+## Contribuindo
 
-Contributions are welcome! If you'd like to contribute to the project, please follow these steps:
+Contribuições são bem-vindas! Se você quiser contribuir com o projeto, siga estas etapas:
 
-1. Fork the repository.
-2. Create a new branch for your feature: git checkout -b feature/your-feature.
-3. Make your changes and commit them: git commit -m 'Add your feature'.
-4. Push to the branch: git push origin feature/your-feature.
-5. Open a pull request.
+1. Bifurque o repositório.
+2. Crie uma nova branch para sua feature: git checkout -b feature/your-feature.
+3. Faça suas alterações e confirme-as: git commit -m 'feat: your feature'.
+4. Envie para a branch: git push origin feature/your-feature.
+5. Abra um PR.
